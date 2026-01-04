@@ -9,11 +9,35 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #1a1a1a;
+}
+
+/* ========================================
+   SKIP LINK FOR ACCESSIBILITY
+   ======================================== */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10000;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* ========================================
@@ -50,12 +74,22 @@ nav ul li a {
     border-radius: 5px;
     transition: all 0.3s ease;
     display: block;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
     background-color: #4CAF50;
     transform: translateY(-2px);
+}
+
+nav ul li a:focus {
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
 }
 
 /* ========================================
@@ -228,6 +262,8 @@ img {
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
+    min-height: 44px;
+    min-width: 44px;
 }
 
 .tab-button:hover {
@@ -238,6 +274,11 @@ img {
 .tab-button.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.tab-button:focus {
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
 }
 
 .tab-content {
@@ -384,4 +425,57 @@ img {
 
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+/* ========================================
+   FOCUS STYLES FOR ACCESSIBILITY
+   ======================================== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    nav,
+    .skip-link {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
 }
