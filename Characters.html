@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soul Knight Characters - Player characters, NPCs, and enemies">
+    <title>Soul Knight Wiki - Characters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Characters.html" class="active">Characters</a></li>
+            <li><a href="Lobby.html">Lobby</a></li>
+            <li><a href="Weapons.html">Weapons</a></li>
+            <li><a href="Worlds.html">Floors</a></li>
+            <li><a href="Buffs.html">Buffs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Characters</h1>
+
+        <h2>Player Characters</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="obrazky/characters/Knight_0.webp" alt="Knight character" loading="lazy">
+                <h3>Knight</h3>
+                <div class="character-stats">
+                    <p>HP: 6</p>
+                    <p>Armor: 5</p>
+                    <p>Damage: 4</p>
+                    <p>Critical chance: 5</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="obrazky/characters/Rogue_0.webp" alt="Rogue character" loading="lazy">
+                <h3>Rogue</h3>
+                <div class="character-stats">
+                    <p>HP: 5</p>
+                    <p>Armor: 3</p>
+                    <p>Damage: 5</p>
+                    <p>Critical chance: 10</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="obrazky/characters/Witch_0.webp" alt="Witch character" loading="lazy">
+                <h3>Witch</h3>
+                <div class="character-stats">
+                    <p>HP: 3</p>
+                    <p>Armor: 5</p>
+                    <p>Damage: 3</p>
+                    <p>Critical chance: 0</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="obrazky/characters/Assassin_0.webp" alt="Assassin character" loading="lazy">
+                <h3>Assassin</h3>
+                <div class="character-stats">
+                    <p>HP: 4</p>
+                    <p>Armor: 4</p>
+                    <p>Damage: 5</p>
+                    <p>Critical chance: 10</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="obrazky/characters/Alchemist_0.webp" alt="Alchemist character" loading="lazy">
+                <h3>Alchemist</h3>
+                <div class="character-stats">
+                    <p>HP: 5</p>
+                    <p>Armor: 5</p>
+                    <p>Damage: 4</p>
+                    <p>Critical chance: 5</p>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="obrazky/characters/Priestess_0.webp" alt="Priestess character" loading="lazy">
+                <h3>Priestess</h3>
+                <div class="character-stats">
+                    <p>HP: 3</p>
+                    <p>Armor: 5</p>
+                    <p>Damage: 3</p>
+                    <p>Critical chance: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>NPC</h2>
+        <div class="npc-grid">
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_Mail_Guy.webp" alt="Mail Guy NPC" loading="lazy">
+                <h3>Mail Guy</h3>
+                <p>Delivers 500 gems and package every day</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_mentor.webp" alt="Mentor NPC" loading="lazy">
+                <h3>Mentor</h3>
+                <p>Provides a unique Buff that enhances player's skill</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_mount_merchant.webp" alt="Mount Merchant NPC" loading="lazy">
+                <h3>Mount Merchant</h3>
+                <p>He can sell the mount for some gold so that the player can use it</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_Officer.webp" alt="Officer NPC" loading="lazy">
+                <h3>Officer</h3>
+                <p>The Officer will reward the player for every completed Challenge or Task when interacted with</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_Pets.webp" alt="Pets NPC" loading="lazy">
+                <h3>Pets</h3>
+                <p>Pets are followers that assist the player in dungeons</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_Trader.webp" alt="Trader NPC" loading="lazy">
+                <h3>Trader</h3>
+                <p>The Trader is selling items for some gems</p>
+            </div>
+
+            <div class="npc-card">
+                <img src="obrazky/characters/Npc_weapon_smith.webp" alt="Weapon Smith NPC" loading="lazy">
+                <h3>Weapon Smith</h3>
+                <p>Makes an attachment that's compatible with the current weapon the player is holding</p>
+            </div>
+        </div>
+
+        <h2>Enemies</h2>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'floor1')">1st Floor</button>
+            <button class="tab-button" onclick="openTab(event, 'floor2')">2nd Floor</button>
+            <button class="tab-button" onclick="openTab(event, 'floor3')">3rd Floor</button>
+        </div>
+
+        <div id="floor1" class="tab-content active">
+            <h3>1st Floor - Regular Enemies</h3>
+            <div class="enemy-grid">
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Guard_Pistol.webp" alt="Goblin Guard with Pistol" loading="lazy">
+                    <h3>Goblin Guard (Pistol)</h3>
+                    <p>Fires 2 slow-moving projectiles</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Guard_Goblin_Spear.webp" alt="Goblin Guard with Spear" loading="lazy">
+                    <h3>Goblin Guard (Spear)</h3>
+                    <p>Attacks by thrusting their spear</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Guard_Bow.webp" alt="Goblin Guard with Bow" loading="lazy">
+                    <h3>Goblin Guard (Bow)</h3>
+                    <p>This enemy wields a bow, slowly firing red arrows at enemies</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Elite_Goblin_Guard_Shotgun.webp" alt="Elite Goblin Guard with Shotgun" loading="lazy">
+                    <h3>Elite Goblin Guard (Shotgun)</h3>
+                    <p>Fires 5 bullets in a spread angle</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Elite_Goblin_Guard_Blowpipe.webp" alt="Elite Goblin Guard with Blowpipe" loading="lazy">
+                    <h3>Elite Goblin Guard (Blowpipe)</h3>
+                    <p>Fires one long fast-moving green bullet that deals 3 damage and inflicts Poison</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Elite_Goblin_Guard_Axe.webp" alt="Elite Goblin Guard with Axe" loading="lazy">
+                    <h3>Elite Goblin Guard (Axe)</h3>
+                    <p>They will try to swing their weapon to attack players</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Elite_Goblin_Archer.webp" alt="Elite Goblin Archer" loading="lazy">
+                    <h3>Elite Goblin Archer</h3>
+                    <p>This enemy will shoot powerful arrows at the player, and a red line will appear to indicate its attacks</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Shaman.webp" alt="Goblin Shaman" loading="lazy">
+                    <h3>Goblin Shaman</h3>
+                    <p>It shoots 3 star-shaped bullets that split into 3 small bullets each after a short period of time</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Giant.webp" alt="Goblin Giant" loading="lazy">
+                    <h3>Goblin Giant</h3>
+                    <p>Slams its hammer on the ground and produces many bullets that spread outward</p>
+                </div>
+            </div>
+
+            <h3>1st Floor - Bosses</h3>
+            <div class="enemy-grid">
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Easter_Bunny.webp" alt="Easter Bunny boss" loading="lazy">
+                    <h3>Easter Bunny</h3>
+                    <div class="boss-drops">
+                        <h4>Drops:</h4>
+                        <ul>
+                            <li>Timber</li>
+                            <li>Rival cassette</li>
+                            <li>Easter Bunny Skin Fragment</li>
+                            <li>Nirvana cross</li>
+                            <li>Carrot seed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Devils_Snare.webp" alt="Devil's Snare boss" loading="lazy">
+                    <h3>Devil's Snare</h3>
+                    <div class="boss-drops">
+                        <h4>Drops:</h4>
+                        <ul>
+                            <li>Cannibal Plant</li>
+                            <li>Timber</li>
+                            <li>Rival cassette</li>
+                            <li>Devil's snare skin fragment</li>
+                            <li>Devil's snare seed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Goblin_Priest.webp" alt="Goblin Priest boss" loading="lazy">
+                    <h3>Goblin Priest</h3>
+                    <div class="boss-drops">
+                        <h4>Drops:</h4>
+                        <ul>
+                            <li>Staff of Shooting Stars</li>
+                            <li>Magic fragment</li>
+                            <li>Goblin Priest Skin Fragment</li>
+                            <li>Rival cassette</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Christmas_Treant.webp" alt="Christmas Treant boss" loading="lazy">
+                    <h3>Christmas Treant</h3>
+                    <div class="boss-drops">
+                        <h4>Drops:</h4>
+                        <ul>
+                            <li>Agitated Trunk</li>
+                            <li>Rival cassette</li>
+                            <li>Timber</li>
+                            <li>Xmas Tree seed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="floor2" class="tab-content">
+            <h3>2nd Floor - Enemies</h3>
+            <div class="enemy-grid">
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Boar.webp" alt="Boar enemy" loading="lazy">
+                    <h3>Boar</h3>
+                    <p>It can only run close and try to bump into the player</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Dire_Boar.webp" alt="Dire Boar enemy" loading="lazy">
+                    <h3>Dire Boar</h3>
+                    <p>They attack by ramming into targets, dealing contact damage</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_GunShark.webp" alt="GunShark enemy" loading="lazy">
+                    <h3>GunShark</h3>
+                    <p>They attack by ramming into targets, dealing contact damage</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Boomerang_Cactus.webp" alt="Boomerang Cactus enemy" loading="lazy">
+                    <h3>Boomerang Cactus</h3>
+                    <p>It fires a boomerang projectile which damages the player</p>
+                </div>
+
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Trumpet_Flower.webp" alt="Trumpet Flower enemy" loading="lazy">
+                    <h3>Trumpet Flower</h3>
+                    <p>They will slowly disperse a multitude of short-ranged bubble projectiles around themselves</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="floor3" class="tab-content">
+            <h3>3rd Floor - Enemies</h3>
+            <div class="enemy-grid">
+                <div class="enemy-card">
+                    <img src="obrazky/enemies/Sprite_Fire_Goblin_Priest.webp" alt="Fire Goblin Priest enemy" loading="lazy">
+                    <h3>Fire Goblin Priest</h3>
+                    <p>The Fire Goblin Priest shoots 6 fireballs that create pools of fire near itself</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
