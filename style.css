@@ -482,26 +482,65 @@ img {
 /* ========================================
    BOSS DROPS
    ======================================== */
+.boss-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+}
+
+.boss-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+    border-color: #4CAF50;
+}
+
+.boss-card img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 5px;
+}
+
+.boss-card h3 {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
 .boss-drops {
     background-color: #3a2f1a;
     border-left: 4px solid #ff9800;
     padding: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     border-radius: 5px;
+    text-align: left;
+    flex-grow: 1;
 }
 
 .boss-drops h4 {
     color: #ff9800;
     margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .boss-drops ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .boss-drops ul li {
     color: #e0e0e0;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
 }
 
 .boss-drops ul li:before {
