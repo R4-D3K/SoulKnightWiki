@@ -24,7 +24,7 @@
 
     <title>Soul Knight Wiki - Home</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="canonical" href="https://r4-d3k.github.io/SoulKnightWiki/">
 </head>
 <body>
@@ -40,27 +40,54 @@
         </ul>
     </nav>
 
-    <div class="container" id="main-content">
-        <img src="obrazky/wallpaper3.jpg" alt="Soul Knight game wallpaper" class="hero-image">
-        
-        <img src="obrazky/soul_knight_logo1.png" alt="Soul Knight Logo" class="logo">
-        
-        <img src="obrazky/soul-knight-portal.png" alt="Soul Knight portal entrance" class="hero-image" loading="lazy">
-        
-        <div class="intro">
-            <h2>A Dungeon Exploration Game!</h2>
-            <p>In a world where both swords and firearms existed, a magical stone that maintained the balance of the world was stolen.</p>
-            <p>It was stolen by high-tech aliens, and the world now hangs in the balance.</p>
-            <p>Your mission is to navigate deep dungeons, defeat hordes of enemies, and retrieve the stone.</p>
+    <!-- Hero Section -->
+    <div class="hero-section" id="main-content">
+        <div class="hero-background">
+            <img src="obrazky/wallpaper3.jpg" alt="Soul Knight game wallpaper" class="hero-wallpaper">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <img src="obrazky/soul_knight_logo1.png" alt="Soul Knight Logo" class="hero-logo">
+            <p class="hero-subtitle">Hra o prozkoumávání dungeonů</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Story Section -->
+        <div class="story-section">
+            <div class="story-content">
+                <h2>A Dungeon Exploration Game!</h2>
+                <p>In a world where both swords and firearms existed, a magical stone that maintained the balance of the world was stolen.</p>
+                <p>It was stolen by high-tech aliens, and the world now hangs in the balance.</p>
+                <p>Your mission is to navigate deep dungeons, defeat hordes of enemies, and retrieve the stone.</p>
+            </div>
+            <div class="story-image">
+                <img src="obrazky/soul-knight-portal.png" alt="Soul Knight portal entrance" loading="lazy">
+            </div>
         </div>
 
-        <h2 class="text-center">Gallery</h2>
-        <div class="gallery">
-            <img src="obrazky/gallery/fight_second_floor.jpg" alt="Combat scene on the second floor" loading="lazy">
-            <img src="obrazky/gallery/lobby.jpg" alt="Game lobby overview" loading="lazy">
-            <img src="obrazky/gallery/portal_end_boss.png" alt="Portal to the final boss" loading="lazy">
-            <img src="obrazky/gallery/Trader_in_dungeon.png" alt="Trader NPC in the dungeon" loading="lazy">
-        </div>
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">Ukázky ze hry</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="obrazky/gallery/fight_second_floor.jpg" alt="Combat scene on the second floor" loading="lazy">
+                    <div class="gallery-caption">Boj na druhém patře</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="obrazky/gallery/lobby.jpg" alt="Game lobby overview" loading="lazy">
+                    <div class="gallery-caption">Herní lobby</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="obrazky/gallery/portal_end_boss.png" alt="Portal to the final boss" loading="lazy">
+                    <div class="gallery-caption">Portál k bossovi</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="obrazky/gallery/Trader_in_dungeon.png" alt="Trader NPC in the dungeon" loading="lazy">
+                    <div class="gallery-caption">Obchodník v dungeonu</div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
